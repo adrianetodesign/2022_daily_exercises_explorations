@@ -10,7 +10,7 @@ const reverseString = function(str) {
 
 const reverseStrings = function(strArr) {
   let reverseStrArr = [];
-  for (str in strArr) {
+  for (let str of strArr) {
     reverseStrArr.push(reverseString(str));
   }
   return reverseStrArr;
@@ -18,6 +18,6 @@ const reverseStrings = function(strArr) {
 
 let outputStrings = reverseStrings(inputStrings);
 
-for (string in outputStrings) {
-  console.log(string);
+for (let i = 0; i < outputStrings.length; i++) {
+  console.log(outputStrings[i]);
 }
