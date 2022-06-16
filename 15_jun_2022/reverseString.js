@@ -8,4 +8,16 @@ const reverseString = function(str) {
   return reverseStr;
 }
 
-console.log(reverseString(inputStrings[0]));
+const reverseStrings = function(strArr) {
+  let reverseStrArr = [];
+  for (str in strArr) {
+    reverseStrArr.push(reverseString(str));
+  }
+  return reverseStrArr;
+}
+
+let outputStrings = reverseStrings(inputStrings);
+
+for (string in outputStrings) {
+  console.log(string);
+}
