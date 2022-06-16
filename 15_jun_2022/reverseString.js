@@ -8,4 +8,4 @@ const reverseString = function(str) {
   return reverseStr;
 }
 
-console.log(reverseString(inputStrings));
+console.log(reverseString(inputStrings[0]));
